@@ -1,6 +1,7 @@
 const mongoose = require("mongoose")
 const bcrypt = require("bcryptjs")
 
+// this is for coAdmin page
 
 
 const UserSchema = new mongoose.Schema({

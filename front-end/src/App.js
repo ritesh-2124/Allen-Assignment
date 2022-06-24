@@ -8,6 +8,7 @@ import CityPage from './Components/Courses/Courses';
 import StickyFooter from './Components/Footer/Footer'
 import Admin from './Components/Admin/Admin';
 import StudentDetails from './Components/Admin/StudentDetails';
+import SignUp from './Components/Admin/CoAdmin';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path='/:city/Ragistration' element={<Ragistration/>} />
         <Route path='/admin' element={<Admin/>} />
         <Route path='/admin/StudentDetails' element= {<StudentDetails/>} />
+        <Route path='/admin/AdminRagistration' element = {<SignUp/>} />
     </Routes>
     <StickyFooter/>
 

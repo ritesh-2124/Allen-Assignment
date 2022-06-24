@@ -8,12 +8,12 @@ import { Box, Typography , Grid } from '@mui/material';
 export default function CityPage() {
     const [state, setstate] = useState([]);
     const {city} = useParams()
-    console.log(city)
+  
  
     useEffect(() => {
          axios.get("http://localhost:8085/institution").then((res)=>setstate([...res.data.filter((el)=>el.Branch === city)]))
     }, [city]);
- console.log(state)
+
      
   return <>
   

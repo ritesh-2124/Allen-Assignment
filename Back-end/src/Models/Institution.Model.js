@@ -1,5 +1,8 @@
 const mongoose = require("mongoose")
 
+// in this Schema we have created institution information 
+
+
 const InstitutionSchema = new mongoose.Schema({
     Branch:{type:String , required:true},
     Course:{type:String , required:true},
@@ -13,5 +16,7 @@ const InstitutionSchema = new mongoose.Schema({
      timestamps:true
  }
 )
+
+// i am exporting the model??
 
 module.exports = mongoose.model("institute" , InstitutionSchema)

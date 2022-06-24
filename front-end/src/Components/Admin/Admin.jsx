@@ -33,10 +33,9 @@ export default function Admin() {
   const handleSubmit = (event) => {
     event.preventDefault();
    axios.post("http://localhost:8085/login" , state).then((res)=>{
-    console.log(res.data)
     Navigate("/admin/StudentDetails")
    }).catch((err)=>{
-    console.log(err)
+    alert(err)
    })
   };
 

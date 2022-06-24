@@ -9,6 +9,7 @@ const newToken = (user) => {
 
 }
 
+// this is login signup with token and outh 
 
 const ragister = async (req, res) => {
   try {

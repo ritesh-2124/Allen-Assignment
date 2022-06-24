@@ -30,8 +30,7 @@ function Copyright(props) {
 }
 
 const theme = createTheme();
-const course = JSON.parse(localStorage.getItem("ragistration"));
-    console.log(course)
+var course = JSON.parse(localStorage.getItem("ragistration"));
     
 export default function Ragistration() {
   const [state, setstate] = useState({
@@ -57,13 +56,10 @@ export default function Ragistration() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(state)
     if(state.firstName != "" && state.lastName != "" && state.email != ""){
    axios.post("http://localhost:8085/ragistration" , state).then((res)=>{
-   console.log(res.data)
    toast.success("we have alloted a slot for you please visit our branch ASAP")
    }).catch((err)=>{
-    console.log(err)
     toast.error("enter valid information")
    })
   }else{
@@ -75,7 +71,8 @@ export default function Ragistration() {
   <Box display={"flex"}>
   <Box sx={{margin:"auto"}}>
    <Typography mb={5}  variant='h4'>You are Applying for -</Typography>
-  <Card name={course}/></Box>
+  <Card name={course}/>
+  </Box>
     <ThemeProvider theme={theme}>
       <Container component="main" maxWidth="xs">
         <CssBaseline />

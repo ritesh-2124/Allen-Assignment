@@ -1,5 +1,8 @@
 const mongoose = require("mongoose")
 
+// in this Schema we have created the form where a  user can apply for a course 
+
+
 const RagistrationSchema = new mongoose.Schema({
     Branch:{type:String , required:true},
     Course:{type:String , required:true},

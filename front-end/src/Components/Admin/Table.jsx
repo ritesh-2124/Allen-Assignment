@@ -10,12 +10,11 @@ import Paper from '@mui/material/Paper';
 
 
 export default function BasicTable({name}) {
-    console.log(name)
   return (
-    <TableContainer component={Paper}>
-      <Table  sx={{ minWidth: 650 , marginTop:"80px" }} aria-label="simple table">
+    <TableContainer sx={{height:"600px"}} component={Paper}>
+      <Table  sx={{ minWidth: 650 , marginTop:"20px" }} aria-label="simple table">
         <TableHead>
-          <TableRow >
+          <TableRow  >
             <TableCell sx={{fontSize:"30px"}}>First Name</TableCell>
             <TableCell sx={{fontSize:"30px"}} >Last Name</TableCell>
             <TableCell  sx={{fontSize:"30px"}}>Contect</TableCell>

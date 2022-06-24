@@ -3,7 +3,7 @@ import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import { Button } from '@mui/material';
-
+import { Link} from "react-router-dom"
 
 export default function NavBar() {
   return (
@@ -12,7 +12,7 @@ export default function NavBar() {
           <Typography variant="h6" color="inherit" noWrap>
            Allen Institution
           </Typography>
-          <Button variant='contained' sx={{"marginLeft":"80%" , "backgroundColor":"teal"}}>Are U An Admin </Button>
+     <Link style={{"marginLeft":"80%" , textDecoration:"none"}} to={"/admin"}><Button sx={{ "backgroundColor":"teal"}} variant='contained'>Are U An Admin </Button></Link>
         </Toolbar>
       </AppBar>
   )

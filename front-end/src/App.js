@@ -3,7 +3,11 @@ import './App.css';
 import Home from './Components/Home/Home';
 import Navbar from './Components/Nav/NavBar';
 import {Route , Routes} from "react-router-dom";
-import CityPage from './Components/CityPage/CityPage';
+import Ragistration from './Components/Ragistration/Ragistration';
+import CityPage from './Components/Courses/Courses';
+import StickyFooter from './Components/Footer/Footer'
+import Admin from './Components/Admin/Admin';
+import StudentDetails from './Components/Admin/StudentDetails';
 
 function App() {
   return (
@@ -12,17 +16,11 @@ function App() {
     <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/:city' element={<CityPage/>}/>
-        {/* <Route path='/signIn' element = {<SignUp/>}/>
-        <Route path='/LogIn' element={<SignInSide/>}/>
-        <Route path='/Home' element={<Home/>} />
-        <Route path='/cartpage' element={<Cartpage/>} />
-        <Route path='/singalInfo/:id' element={<Singlepage/>}/>
-        <Route path='/cartpage/Address' element={<AddressForm/>} />
-        <Route path='/category/:category' element={<CatagaryPage/>}/>
-        <Route path='/cartpage/Address/chackout' element={<Checkout/>} />
-        <Route path='/profile' element={<Profile/>} /> */}
+        <Route path='/:city/Ragistration' element={<Ragistration/>} />
+        <Route path='/admin' element={<Admin/>} />
+        <Route path='/admin/StudentDetails' element= {<StudentDetails/>} />
     </Routes>
-    
+    <StickyFooter/>
 
     </>
   );

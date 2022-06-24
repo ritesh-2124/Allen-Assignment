@@ -1,10 +1,8 @@
 import { Box } from '@mui/system'
 import React from 'react'
-import { useState } from 'react';
 import {Link} from "react-router-dom"
 
 export default function City() {
-  const [state, setstate] = useState("");
  
 
   return  <>

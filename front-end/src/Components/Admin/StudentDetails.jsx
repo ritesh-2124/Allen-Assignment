@@ -16,7 +16,7 @@ export default function StudentDetails() {
 
    const handleChange = (event) => {
      setAge(event.target.value);
-     axios.get("http://localhost:8085/ragistration").then((res)=>setstate([...res.data.filter((el)=>el.Branch === age)]))
+     axios.get("https://allendigitel.herokuapp.com/ragistration").then((res)=>setstate([...res.data.filter((el)=>el.Branch === age)]))
    };
    
      useEffect(() => {
@@ -25,7 +25,7 @@ export default function StudentDetails() {
  
  
      const Data = ()=>{
-        axios.get("http://localhost:8085/ragistration").then((res)=>{
+        axios.get("https://allendigitel.herokuapp.com/ragistration").then((res)=>{
              setstate([...res.data])
         }).catch((err)=>{
             alert(err)

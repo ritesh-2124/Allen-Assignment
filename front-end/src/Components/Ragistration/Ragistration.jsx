@@ -57,7 +57,7 @@ export default function Ragistration() {
   const handleSubmit = (event) => {
     event.preventDefault();
     if(state.firstName != "" && state.lastName != "" && state.email != ""){
-   axios.post("http://localhost:8085/ragistration" , state).then((res)=>{
+   axios.post("https://allendigitel.herokuapp.com/ragistration" , state).then((res)=>{
    toast.success("we have alloted a slot for you please visit our branch ASAP")
    }).catch((err)=>{
     toast.error("enter valid information")

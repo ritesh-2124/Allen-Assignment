@@ -32,7 +32,7 @@ export default function Admin() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-   axios.post("http://localhost:8085/login" , state).then((res)=>{
+   axios.post("https://allendigitel.herokuapp.com/login" , state).then((res)=>{
     Navigate("/admin/StudentDetails")
    }).catch((err)=>{
     alert(err)

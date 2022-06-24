@@ -31,7 +31,7 @@ export default function SignUp() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    axios.post("http://localhost:8085/signup" , state).then((result) => {
+    axios.post("https://allendigitel.herokuapp.com/signup" , state).then((result) => {
      alert(`ragister succesfully ,email- ${state.email } password - ${state.password} Take a ScreenShot of Cradintial `)      
     }).catch((err) => {
         alert("something is Wrong")

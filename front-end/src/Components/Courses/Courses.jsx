@@ -11,7 +11,7 @@ export default function CityPage() {
   
  
     useEffect(() => {
-         axios.get("http://localhost:8085/institution").then((res)=>setstate([...res.data.filter((el)=>el.Branch === city)]))
+         axios.get("https://allendigitel.herokuapp.com/institution").then((res)=>setstate([...res.data.filter((el)=>el.Branch === city)]))
     }, [city]);
 
      

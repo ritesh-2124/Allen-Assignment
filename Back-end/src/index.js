@@ -8,7 +8,7 @@ App.use(express.json())
 const connect = require("./db")
 const InstituteController = require("./Controller/Institution.controller")
 const RagistrationController = require("./Controller/Ragistration.controller")
-const {ragister, login} = require("./Controller/User.controller")
+const {ragister, login} = require("./Controller/User.Controller")
 
 
  App.post('/signup' , ragister)
@@ -19,7 +19,7 @@ App.use("/ragistration" , RagistrationController)
 
 
 
-App.listen( 8085, async()=>{
+App.listen( process.env.PORT || 8085, async()=>{
     try {
      await connect()
     console.log("server in running " , `${8085}`)   

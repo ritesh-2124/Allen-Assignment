@@ -35,4 +35,11 @@
 
 
 # Home Page 
+![homepage](https://user-images.githubusercontent.com/71218754/175610805-adf248a7-6ccb-4b81-972b-30b7a13e2bce.png)
+
+# courses
+![courses](https://user-images.githubusercontent.com/71218754/175610869-a9acaf53-d6d4-44f7-bcd4-c69fce72bc7a.png)
+
+# Admin Page
+![adminPage](https://user-images.githubusercontent.com/71218754/175610925-df9a0c78-60c1-4b16-a88c-db85a09febb3.png)
 

@@ -27,7 +27,7 @@
  # bugs 
     there are two bugs where i am currently working. 
  1. tranfaring course data from one page to secend page this time we have to refresh.  
- 2. filtaring data in admin page it is working late.
+
 
  # Most worked 
  1. ReactJs 

@@ -38,7 +38,7 @@ export default function StudentDetails() {
           labelId="demo-simple-select-helper-label"
           id="demo-simple-select-helper"
           value={age}
-          label="Age"
+          label="branch"
           onChange={handleChange}
         >
           <MenuItem value="">

@@ -14,7 +14,7 @@ function App() {
   return (
 <>
     <Navbar/>
-    <Routes>
+        <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/:city' element={<CityPage/>}/>
         <Route path='/:city/Ragistration' element={<Ragistration/>} />
